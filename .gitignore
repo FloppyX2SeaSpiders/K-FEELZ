@@ -1,0 +1,9 @@
+# General
+.DS_Store, notes.txt
+
+# dependencies
+node_modules/
+
+# logs
+npm-debug.log*
+

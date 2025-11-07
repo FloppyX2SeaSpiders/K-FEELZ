@@ -32,8 +32,9 @@ mongoose
   .then(() => console.log("MongoDB connected"))
   .catch((err) => console.error("MongoDB connection error:", err));
 
+
 app.get("/", (req, res) => {
-  res.send("Hello from your server!");
+  res.status(200).send("Hello from your server!");
 });
 
 // kDrama Routes
@@ -45,7 +46,7 @@ app.use("/api", router); // This mounts all routes under /api prefix
 
 // Catch-all route for debugging
 app.use((req, res) => {
-  console.log("404 - Route not found:", req.method, req.url);
+  console.log("404 - Route not found: TEST", req.method, req.url);
   res.status(404).json({
     error: "Route not found",
     method: req.method,
