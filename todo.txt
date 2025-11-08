@@ -1,5 +1,9 @@
 Sprint 1:
 
+
+mongodb post request
+
+
 convert things to JS from TS 
 
 figure out mongodb access / etc

@@ -42,7 +42,7 @@ export const getKoreanDramas = async (req, res) => {
     }
 
     const data = await fetchFromTMDB(url);
-
+å
     const results = data.results.slice(0, 10).map((show) => ({
       ...show,
       genre_names: show.genre_ids.map((id) => GENRES[id] || "Unknown"),
