@@ -3,7 +3,7 @@ import { useState, useEffect, type FormEvent, type ChangeEvent, type MouseEvent 
 import { useNavigate } from 'react-router-dom';
 import { authenticateUser } from './slices/authSlice'; 
 
-import { useAppSelector, useAppDispatch } from '../../hooks/hooks';
+import { useAppSelector, useAppDispatch } from '../hooks/hooks';
 
 function Auth() {
   const dispatch = useAppDispatch(); 
