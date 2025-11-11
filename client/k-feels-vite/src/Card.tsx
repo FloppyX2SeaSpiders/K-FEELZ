@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 interface CardProps {
@@ -40,6 +40,15 @@ const Card: React.FC<CardProps> = ({ step, title, options, onSelect }) => {
   // Handle user selection
   const handleSelect = (choice: string) => {
     triggerBurst();
+    useEffect (() => {
+      if(choice === 'mood') {
+        //questions_mood.ts
+        
+    } else if( choice ==='character'){
+      //questions_char.ts
+    }
+  } )
+  
     // Delay advancing to next card slightly to sync with animation
     setTimeout(() => onSelect(choice), 250);
   };
@@ -78,6 +87,7 @@ const Card: React.FC<CardProps> = ({ step, title, options, onSelect }) => {
               whileHover={{ scale: 1.08 }}
               whileTap={{ scale: 0.95 }}
               transition={{ duration: 0.1 }}
+              // onClick={() => handleSelect(option)}
               onClick={() => handleSelect(option)}
             >
               {option}

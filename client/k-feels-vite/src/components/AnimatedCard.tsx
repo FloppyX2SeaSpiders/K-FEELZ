@@ -48,6 +48,7 @@ export default function AnimatedCard({
   //handle user selection
   const handleSelect = (value: string) => {
     triggerBurst();
+    //is this where I'd re-direct???
     //delay advancing to next card slightly to sync with animation
     setTimeout(() => onSelect(value), 250);
   };
