@@ -1,5 +1,5 @@
 import React from 'react';
-import { useAppDispatch, useAppSelector } from '../../hooks/hooks';
+import { useAppDispatch, useAppSelector } from '../hooks/hooks';
 import { logout } from './slices/authSlice';
 import './navbar.css';
 import { useNavigate } from 'react-router-dom';
