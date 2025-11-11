@@ -18,7 +18,7 @@ export default function Quiz() {
   //keep track of all user's selected answers (arr of tags)
   const [tagFromAnsw, setTagFromAnsw] = useState([]);
 
-  //reacy hook to navigate between pages
+  //react hook to navigate between pages
   const navigate = useNavigate();
 
   //fn runs every time user selects answ
@@ -27,7 +27,7 @@ export default function Quiz() {
     const next = [...tagFromAnsw, tag];
     setTagFromAnsw(next);
 
-    //check if this is the lst quest
+    //check if this is the last quest
     const isLast = current === questions.length - 1;
 
     //if so go to the result page

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Navbar from './Navbar';
 import Card from "./Card";
+import Home from "./pages/Home.jsx"
 import "./styles.css";
 
 // Define the quiz flow
@@ -30,7 +31,7 @@ const App: React.FC = () => {
 
     if (currentStep === 0) {
       // If Random is chosen, randomly pick a path
-      if (choice === "Random")
+      if (choice === "Random") 
         nextStep = Math.random() < 0.5 ? "Mood" : "Character";
 
       setStepOrder([nextStep]);
@@ -57,7 +58,7 @@ const App: React.FC = () => {
 
       <Navbar />
       K-Feelz
-
+    {/* <Home /> */}
       <div>
         {/* Decorative back cards */}
         {currentStep < 1 && (
@@ -69,14 +70,14 @@ const App: React.FC = () => {
             <motion.div className="card-back" style={{ top: 20, scale: 0.9 }} />
           </>
         )}
-
+        <Home />
         {/* Active quiz card */}
-        <Card
+        {/* <Card
           step={currentStep + 1}
           title={getCurrentCard().title}
           options={getCurrentCard().options}
           onSelect={handleSelect}
-        />
+        /> */}
       </div>
 
     </motion.div>

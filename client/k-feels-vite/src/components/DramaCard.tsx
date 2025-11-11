@@ -1,6 +1,7 @@
 //represents a single drama card from the list
 import React from "react";
 
+
 const TMDB_IMG = "https://image.tmdb.org/t/p/w500";
 
 interface DramaCardProp {

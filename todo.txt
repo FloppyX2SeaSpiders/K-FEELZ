@@ -28,3 +28,10 @@ sync model files
 git hub readme
 
 -merge JSON packages and have just one 
+
+
+main page has quiz with orwithout signin
+sigin to save mood/ favorites
+mood quiz
+character quiz 
+random needs fix 

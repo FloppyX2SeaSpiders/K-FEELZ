@@ -2,7 +2,7 @@
 import { useNavigate } from "react-router-dom";
 import AnimatedCard from "../components/AnimatedCard";
 import dramas from "../data/drama.json";
-import "../index.css";
+// import "../index.css";
 
 export default function Home() {
   const navigate = useNavigate();
@@ -12,16 +12,15 @@ export default function Home() {
     { label: "By character", value: "character" },
     { label: "Random movie", value: "random" },
   ];
-
   const onSelect = (value) => {
-    if (value === "mood") return navigate("/quiz/mood");
+    // if (value === "mood") return navigate("./data/questions_mood.ts");
+    if (value === "mood") return navigate("/quiz/mood"); //url is changing but nothin is being sent???
     if (value === "character") return navigate("/quiz/character");
     if (value === "random") {
       const pick = dramas[Math.floor(Math.random() * dramas.length)];
       return navigate("/results", { state: { mode: "random", picks: [pick] } });
     }
   };
-
   return (
     <div style={{ maxWidth: 960, margin: "0 auto", padding: 24 }}>
       <div style={{ marginTop: 24 }}>
