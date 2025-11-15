@@ -44,10 +44,7 @@ export const questionsMood: Question[] = [
     options: [
       { answer: "A slow-mo walk under cherry blossoms", tag: "romantic" },
       { answer: "Crying beautifully in the rain", tag: "melancholic" },
-      {
-        answer: "Tripping over nothing but pretending its a dance move",
-        tag: "funny",
-      },
+      { answer: "Tripping over nothing but pretending its a dance move", tag: "funny",},
     ],
   },
 ];

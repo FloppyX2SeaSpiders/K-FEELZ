@@ -1,4 +1,3 @@
-import '@testing-library/jest-dom';
 import { describe, it, expect, vi} from "vitest";
 import { render, screen } from "@testing-library/react";
 import Home from "../src/pages/Home.tsx";
@@ -6,7 +5,7 @@ import AnimatedCard from "../src/components/AnimatedCard.tsx";
 import { BrowserRouter } from "react-router-dom";
 
 
- const fnMock2 = vi.fn()
+//  const fnMock2 = vi.fn()
 //  const testProps = {
 //         step : 2,
 //         title:"string title",
@@ -34,11 +33,11 @@ describe ('Home.tsx', () => {
 });
 
 
-describe.skip ('Animated.tsx', () => {
-    it('render animate card\'s props', () => {
-       render( <AnimatedCard {...testProps} />)
-    });
-})
+// describe('Animated.tsx', () => {
+//     it('render animate card\'s props', () => {
+//        render( <AnimatedCard {...testProps} />)
+//     });
+// })
 // Type '{ step: number; title: string; options: Mock<Procedure>; onSelect: Mock<Procedure>; }' is not assignable to type 'AnimatedCardProps'.
 //   Types of property 'options' are incompatible.
 //     Type 'Mock<Procedure>' is missing the following properties from type 'AnimatedOption[]': pop, push, concat, join, and 34 more.ts(2322)
