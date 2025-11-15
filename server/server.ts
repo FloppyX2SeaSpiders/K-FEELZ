@@ -1,15 +1,14 @@
+import dotenv from "dotenv";
+dotenv.config();
 import express, { Request, Response, NextFunction } from "express";
 import mongoose from "mongoose";
 import cors from "cors";
-import dotenv from "dotenv";
 import path from "path";
 import { fileURLToPath } from "url";
 import { dirname } from "path";
 import router from "./routes/index.js";
 import kDramaRouter from "./routes/kDramaRoutes.js";
 import authRouter from "./routes/authRoutes.js";
-
-dotenv.config();
 
 // Get __dirname in ES modules
 const __filename = fileURLToPath(import.meta.url);
