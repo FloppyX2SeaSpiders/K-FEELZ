@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch, RootState } from "../store";
 import DramaGrid from "../components/DramaGrid";
-import { fetchRecommendations } from "../features/kDramaSlice";
+import { fetchRecommendations } from "../features/kdramaSlice";
 
 export default function Results(): JSX.Element {
   const location = useLocation();
